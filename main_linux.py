@@ -123,7 +123,7 @@ page_2 = '''\n
 #Main
 def main():
     page_num = 1
-    os.system("adb tcpip 5555")
+    os.system("adb tcpip 8090")
     os.system("adb devices -l")
     print (("\n[{0}+{1}] Enter a phones ip address.(Type 99 to exit)").format(Fore.RED, Fore.WHITE))
     try:
@@ -446,7 +446,7 @@ yn = raw_input(Fore.WHITE + "Have you already installed adb via command line "+F
 if yn == "n":
     os.system("sudo apt install adb")
 print (Fore.RED + "Starting  adb server..")
-os.system("adb tcpip 5555")
+os.system("adb tcpip 8090")
 t.sleep(4)
 os.system('clear')
 banner_title = random.choice([logo_design_1,logo_design_2,logo_design_3,logo_design_4])
