@@ -176,10 +176,10 @@ def main():
     elif option  ==  '2':
         os.system("adb disconnect")
     elif option == '3':
-        os.system("adb tcpip 8090,80,8080")
+        os.system("adb tcpip 8090")
         print (("\n[{0}+{1}] Enter a phones ip address.").format(Fore.RED, Fore.WHITE))
         ip = raw_input (arrow+" phonesploit"+Fore.RED + "(connect_phone) "+Fore.WHITE + "> ")
-        os.system("adb connect "+ip+":8090,80,8080")
+        os.system("adb connect "+ip+":8090")
     
     elif option  == '4':
         print (("\n[{0}+{1}]Enter a device name.").format(Fore.RED, Fore.WHITE))
@@ -496,7 +496,7 @@ try:
     init(convert=True)
     os.chdir(CurrentDir+"//adb")
     print (Fore.RED + "Starting  adb server..")
-    os.system("adb tcpip 8090,80,8080")
+    os.system("adb tcpip 8090")
     t.sleep(4)
     os.system('cls')
     banner_title = random.choice([logo_design_1,logo_design_2,logo_design_3,logo_design_4,logo_design_5,logo_design_6,logo_design_7])
